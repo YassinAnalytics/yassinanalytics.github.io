@@ -11,7 +11,7 @@
   gtag('config', 'G-MRGMRCHKZD');
 </script>
     <meta charset="UTF-8" />
-    <title>Yassin ZEHAR — Product Manager Portfolio</title>
+    <title>Yassin ZEHAR · Senior Product Manager</title>
 
     <link
       rel="icon"
@@ -20,7 +20,7 @@
 
     <meta
       name="description"
-      content="Product Manager portfolio focused on delivery, analytics and automation to drive measurable outcomes."
+      content="Senior Product Manager, 7+ years across automotive marketplaces, logistics SaaS and contact-center platforms. Case studies on turning complex operational needs into reusable product capabilities."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -31,11 +31,8 @@
     <!-- Create this file for safe overrides -->
     <link rel="stylesheet" href="static/css/0/custom.css" />
 
-    <script
-      src="/static/js/0/anime.min.js"
-      integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8="
-      crossorigin="anonymous"
-    ></script>
+    <!-- fichier local du dépôt : pas de SRI (le hash ne correspondait plus et bloquait le script) -->
+    <script src="static/js/0/anime.min.js"></script>
   </head>
 
   <body>
@@ -46,17 +43,17 @@
           <div class="col-md-15">
             <div class="section-heading">
               <h1>Hi, I'm Yassin ZEHAR</h1>
-              <h2 id="typing">Product Manager</h2>
+              <h2 id="typing">Senior Product Manager</h2>
 
               <p>
-                Product Manager with <strong>7+ years of experience</strong> delivering digital products in
-                <strong>international environments</strong>. I focus on execution, stakeholder alignment,
-                and <strong>data-informed decision-making</strong> to drive measurable outcomes.
+                Senior Product Manager, <strong>7+ years</strong> across automotive marketplaces, logistics SaaS
+                and contact-center platforms. I turn complex operational needs into product capabilities
+                that ship once and serve every account.
               </p>
 
               <p>
-                Below is a curated selection of projects combining
-                <strong>product delivery</strong>, <strong>analytics</strong>, and <strong>automation</strong>.
+                I run the discovery, write the SQL that validates it, and own the outcome:
+                <strong>deals won, revenue built, accounts retained</strong>.
               </p>
             </div>
 
@@ -73,6 +70,106 @@
       </header>
 
       <!-- ========================= -->
+<!-- CASE STUDIES -->
+<!-- ========================= -->
+<section id="case-studies">
+  <h2>Case Studies</h2>
+
+  <p class="cs-lede">
+    Three problems, three sectors, one method: take what looks like
+    <strong>one customer's demand</strong> and build the
+    <strong>reusable capability</strong> underneath it.
+  </p>
+
+  <div class="cs-list">
+
+    <!-- 1) Skill bundles -->
+    <article class="case-study">
+      <div class="cs-kicker">Case Study · Platform</div>
+      <div class="cs-title">Skill bundles: turning one client's requirement into a platform capability</div>
+      <div class="cs-meta">European CCaaS vendor · contact-center platform, 20+ countries</div>
+
+      <p>
+        To configure call routing, administrators had to create and assign
+        <strong>up to 900 individual skills per entity</strong>. That is hours of setup, and it made
+        reconfiguration under pressure effectively impossible, which is exactly when routing matters most.
+      </p>
+      <p>
+        The requirement surfaced during a large competitive bid. The obvious build was a client-specific
+        implementation: it would have satisfied the requirement and closed the deal.
+      </p>
+      <p>
+        I built a reusable abstraction instead: <strong>skill bundles</strong>, added to the product core
+        rather than to one account's scope. Configuration drops from hundreds of items to a handful, and a
+        crisis cell can be stood up in minutes rather than hours.
+      </p>
+      <p>
+        The capability anchored the bid, then redeployed to other accounts with no rework.
+        <strong>15,000+ agents in scope.</strong>
+      </p>
+
+      <div class="cs-principle">
+        <b>The principle:</b> a requirement from one account is usually a signal about the segment.
+        Build for the segment.
+      </div>
+    </article>
+
+    <!-- 2) Landing page module -->
+    <article class="case-study">
+      <div class="cs-kicker">Case Study · Tooling</div>
+      <div class="cs-title">Landing page module: making the 80th launch cost less than the first</div>
+      <div class="cs-meta">Cox Automotive Europe · automotive marketplace, French market entry</div>
+
+      <p>
+        Opening the French market meant <strong>80+ web launches</strong>. Every page was built by hand,
+        from scratch. The eightieth was going to cost what the first had cost, and nothing produced along
+        the way would be worth anything the second time.
+      </p>
+      <p>
+        The obvious path was to keep producing pages one at a time, or to build a template per brand.
+      </p>
+      <p>
+        I built a <strong>landing page creation module</strong> instead, designed as a reusable capability
+        rather than a French template. Launches became repeatable rather than bespoke, and the module was later
+        <strong>duplicated for other brands internationally</strong>, without redevelopment.
+      </p>
+
+      <div class="cs-principle">
+        <b>The principle:</b> when the work repeats, the product is the tool, not the output.
+      </div>
+    </article>
+
+    <!-- 3) Multi-source stock ingestion -->
+    <article class="case-study">
+      <div class="cs-kicker">Case Study · Data</div>
+      <div class="cs-title">Multi-source stock ingestion: a catalogue you can actually trust</div>
+      <div class="cs-meta">Cox Automotive Europe · Product management, 3 products across 2 squads</div>
+
+      <p>
+        Vehicle stock arrived from <strong>hundreds of dealerships</strong>, in heterogeneous formats, with
+        inconsistent and sometimes contradictory data. Without normalisation there is no reliable catalogue,
+        and everything downstream inherits the mess: search, pricing, listings, the lot.
+      </p>
+      <p>
+        The obvious approach was one connector per source, built case by case. That survives four sources.
+        It does not survive four hundred.
+      </p>
+      <p>
+        I built an <strong>ingestion and normalisation layer</strong> instead: new sources plug into a defined
+        contract rather than getting their own bespoke pipeline. The layer runs across <strong>7 brands</strong>,
+        ingesting stock from hundreds of dealerships and <strong>thousands of vehicles</strong>. One surface,
+        not four hundred integrations.
+      </p>
+
+      <div class="cs-principle">
+        <b>The principle:</b> integrations are not features, they are a surface. Design the surface once.
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========================= -->
 <!-- PUBLICATIONS -->
 <!-- ========================= -->
 <section id="publications" style="margin-top: 30px;">
@@ -168,10 +265,204 @@
 
 
 <!-- ========================= -->
-<!-- FEATURED PROJECTS -->
+<!-- PRODUCT CONCEPTS -->
+<!-- ========================= -->
+<section id="product-concepts" style="margin-top: 30px;">
+  <h2>Product Concepts</h2>
+
+  <p class="cs-lede">
+    Six tools for the parts of product work that usually get done badly. Each one started as a written
+    brief: the problem, the data model, the one decision everything else depends on. They are
+    <strong>front-end prototypes with synthetic data</strong>, built to make an argument, not products
+    with users.
+  </p>
+
+  <main id="portfolio-concepts">
+    <div class="row no-gutters">
+
+      <!-- Bellwether -->
+      <div class="col-lg-4 col-md-6 portfolio-container">
+        <div class="portfolio-card">
+          <img src="static/img/concepts/bellwether.png" alt="Bellwether prototype preview" class="portfolio-card-img" />
+          <div class="portfolio-card-body">
+            <div class="pm-thumb-kicker">Concept · Prioritisation</div>
+            <div class="pm-thumb-title">Bellwether</div>
+            <div class="pm-thumb-meta">Your roadmap, priced</div>
+          </div>
+        </div>
+        <div class="portfolio-box-description">
+          Clusters feedback into themes, then prices every theme by the ARR of the accounts that raised it.
+          <br /><strong>The decision:</strong> ranking by mentions and ranking by revenue at risk produce
+          two different roadmaps. Volume is not value.
+        </div>
+      </div>
+
+      <!-- AnswerVault -->
+      <div class="col-lg-4 col-md-6 portfolio-container">
+        <div class="portfolio-card">
+          <img src="static/img/concepts/answervault.png" alt="AnswerVault prototype preview" class="portfolio-card-img" />
+          <div class="portfolio-card-body">
+            <div class="pm-thumb-kicker">Concept · Pre-sales</div>
+            <div class="pm-thumb-title">AnswerVault</div>
+            <div class="pm-thumb-meta">RFP &amp; security questionnaire engine</div>
+          </div>
+        </div>
+        <div class="portfolio-box-description">
+          Drafts an answer per question, each with a confidence score and the exact source it came from.
+          <br /><strong>The decision:</strong> anything that reads as a contractual commitment is flagged
+          for Legal rather than answered. Speed is not the risk; unreviewed promises are.
+        </div>
+      </div>
+
+      <!-- Counterpart -->
+      <div class="col-lg-4 col-md-6 portfolio-container">
+        <div class="portfolio-card">
+          <img src="static/img/concepts/counterpart.png" alt="Counterpart prototype preview" class="portfolio-card-img" />
+          <div class="portfolio-card-body">
+            <div class="pm-thumb-kicker">Concept · Specification</div>
+            <div class="pm-thumb-title">Counterpart</div>
+            <div class="pm-thumb-meta">A spec tool that interrogates first</div>
+          </div>
+        </div>
+        <div class="portfolio-box-description">
+          It refuses to write the document until it has asked the questions a senior PM would ask.
+          <br /><strong>The decision:</strong> "handle payment failures gracefully" is not a requirement.
+          It is an undecided thing wearing a confident sentence, and it gets the most prominent section.
+        </div>
+      </div>
+
+      <!-- Throughline -->
+      <div class="col-lg-4 col-md-6 portfolio-container">
+        <div class="portfolio-card">
+          <img src="static/img/concepts/throughline.png" alt="Throughline prototype preview" class="portfolio-card-img" />
+          <div class="portfolio-card-body">
+            <div class="pm-thumb-kicker">Concept · Discovery</div>
+            <div class="pm-thumb-title">Throughline</div>
+            <div class="pm-thumb-meta">Interview synthesis with citations</div>
+          </div>
+        </div>
+        <div class="portfolio-box-description">
+          Turns a round of 8 to 15 interviews into an insight document in minutes.
+          <br /><strong>The decision:</strong> the timestamp survives ingestion, so every insight carries a
+          citation. It also surfaces what a summary structurally cannot: where people say one thing and do another.
+        </div>
+      </div>
+
+      <!-- Groundtruth -->
+      <div class="col-lg-4 col-md-6 portfolio-container">
+        <div class="portfolio-card">
+          <img src="static/img/concepts/groundtruth.png" alt="Groundtruth prototype preview" class="portfolio-card-img" />
+          <div class="portfolio-card-body">
+            <div class="pm-thumb-kicker">Concept · AI evaluation</div>
+            <div class="pm-thumb-title">Groundtruth</div>
+            <div class="pm-thumb-meta">An eval harness for AI features</div>
+          </div>
+        </div>
+        <div class="portfolio-box-description">
+          Write the test cases once, run them against every prompt version and every model, get a scorecard
+          and regression detection between versions.
+          <br /><strong>The decision:</strong> it exists to replace the sentence "it feels better".
+        </div>
+      </div>
+
+      <!-- Perimeter -->
+      <div class="col-lg-4 col-md-6 portfolio-container">
+        <div class="portfolio-card">
+          <img src="static/img/concepts/perimeter.png" alt="Perimeter prototype preview" class="portfolio-card-img" />
+          <div class="portfolio-card-body">
+            <div class="pm-thumb-kicker">Concept · Competitive intel</div>
+            <div class="pm-thumb-title">Perimeter</div>
+            <div class="pm-thumb-meta">Competitor changes, joined to your own data</div>
+          </div>
+        </div>
+        <div class="portfolio-box-description">
+          Watches competitors' changelogs and pricing pages, diffs each capture, discards the noise and
+          rewrites the affected battlecards.
+          <br /><strong>The decision:</strong> a change on its own is a headline. Joined to your capability
+          matrix and lost-deal reasons, it becomes intelligence.
+        </div>
+      </div>
+
+    </div>
+  </main>
+</section>
+
+
+<!-- ========================= -->
+<!-- LIVE APPS -->
+<!-- ========================= -->
+<section id="live-apps" style="margin-top: 30px;">
+  <h2>Live Apps</h2>
+
+  <p class="cs-lede">Shipped and running in production, not prototypes.</p>
+
+  <main id="portfolio-live">
+    <div class="row no-gutters">
+
+      <!-- RICE + MoSCoW Prioritization Tool -->
+      <div class="col-lg-4 col-md-6 portfolio-container">
+        <a
+          class="portfolio-card"
+          href="https://pm-rice-moscow-prioritization-tool.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="static/img/rice-moscow-prioritization-app.png"
+            alt="RICE + MoSCoW Prioritization Tool preview"
+            class="portfolio-card-img"
+          />
+
+          <div class="portfolio-card-body">
+            <div class="pm-thumb-kicker">Live · Product tooling</div>
+            <div class="pm-thumb-title">RICE + MoSCoW Prioritization Tool</div>
+            <div class="pm-thumb-meta">Next.js · Live on Vercel</div>
+          </div>
+        </a>
+
+        <div class="portfolio-box-description">
+          Scores and prioritises product features with RICE, categorised through MoSCoW.
+          <br /><strong>Features:</strong> real-time RICE score preview, MoSCoW distribution, feature comparison.
+        </div>
+      </div>
+
+      <!-- TravelPlanHelp -->
+      <div class="col-lg-4 col-md-6 portfolio-container">
+        <a
+          class="portfolio-card"
+          href="https://travalappplan.vercel.app/en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="static/img/travel-plan-help-app.png"
+            alt="TravelPlanHelp app preview"
+            class="portfolio-card-img"
+          />
+
+          <div class="portfolio-card-body">
+            <div class="pm-thumb-kicker">Live · Consumer</div>
+            <div class="pm-thumb-title">TravelPlanHelp, AI Trip Planner</div>
+            <div class="pm-thumb-meta">Next.js · Bilingual FR/EN · Live on Vercel</div>
+          </div>
+        </a>
+
+        <div class="portfolio-box-description">
+          AI-powered travel itinerary generator with customizable trip parameters (duration, budget, style, group type).
+          <br /><strong>Features:</strong> personalized itineraries, saved trips, dark mode, multilingual.
+        </div>
+      </div>
+
+    </div>
+  </main>
+</section>
+
+
+<!-- ========================= -->
+<!-- PRODUCT OPS & AUTOMATION -->
 <!-- ========================= -->
 <section id="featured-projects" style="margin-top: 30px;">
-  <h2>Featured Projects</h2>
+  <h2>Product Ops &amp; Automation</h2>
 
   <main id="portfolio-featured">
     <div class="row no-gutters">
@@ -231,34 +522,7 @@
         </div>
       </div>
 
-      <!-- 3) Featured: Data Quality Monitoring -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://github.com/YassinAnalytics/Monitor-Data-Quality-with-Notion-Rules-SQL-Checks-AI-Powered-Alerts/blob/main/README.md"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/monitor-data-quality.png"
-            alt="Data Quality Monitoring project preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">FEATURED · DATA</div>
-            <div class="pm-thumb-title">Data Quality Monitoring</div>
-            <div class="pm-thumb-meta">Notion rules → SQL checks → Diagnostics → Alerts</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Defines data quality rules in Notion, converts them into SQL checks, and computes a global data health score.
-          <br /><strong>Behavior:</strong> silent when healthy, alerts only when action is needed.
-        </div>
-      </div>
-
-      <!-- 4) Featured: B2B SaaS Renewal Risk -->
+      <!-- 3) Featured: B2B SaaS Renewal Risk -->
       <div class="col-lg-4 col-md-6 portfolio-container">
         <a
           class="portfolio-card"
@@ -285,307 +549,11 @@
         </div>
       </div>
 
-      <!-- 5) Featured: RICE + MoSCoW Prioritization Tool -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://pm-rice-moscow-prioritization-tool.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/rice-moscow-prioritization-app.png"
-            alt="RICE + MoSCoW Prioritization Tool preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">FEATURED · APP</div>
-            <div class="pm-thumb-title">RICE + MoSCoW Prioritization Tool</div>
-            <div class="pm-thumb-meta">Next.js · Live web app on Vercel</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Interactive tool to score and prioritize product features using RICE framework with MoSCoW categorization.
-          <br /><strong>Features:</strong> real-time RICE score preview, MoSCoW distribution, feature comparison.
-        </div>
-      </div>
-
-      <!-- 6) Featured: TravelPlanHelp -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://travalappplan.vercel.app/en"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/travel-plan-help-app.png"
-            alt="TravelPlanHelp app preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">FEATURED · APP</div>
-            <div class="pm-thumb-title">TravelPlanHelp — AI Trip Planner</div>
-            <div class="pm-thumb-meta">Next.js · Bilingual (FR/EN) · Live on Vercel</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          AI-powered travel itinerary generator with customizable trip parameters (duration, budget, style, group type).
-          <br /><strong>Features:</strong> personalized itineraries, saved trips, dark mode, multilingual.
-        </div>
-      </div>
-
     </div>
   </main>
 </section>
 
 
-<!-- ========================= -->
-<!-- AUTOMATION & DELIVERY -->
-<!-- ========================= -->
-<section id="automation-delivery" style="margin-top: 30px;">
-  <h2>Automation & Delivery Systems</h2>
-
-  <main id="portfolio-automation">
-    <div class="row no-gutters">
-
-      <!-- 1) Automation: Urgent Task Escalation -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://github.com/YassinAnalytics/Send-Alert-When-Task-Is-Urgent-in-Google-Sheets-with-Telegram-reminder"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/send-alert-when-task.png"
-            alt="Urgent Task Escalation automation preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">AUTOMATION</div>
-            <div class="pm-thumb-title">Urgent Task Escalation</div>
-            <div class="pm-thumb-meta">Google Sheets → Gmail → Telegram → Jira</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Detects urgent tasks, emails owners, prevents duplicates, escalates via Telegram, and creates Jira tickets.
-          <br /><strong>Outcome:</strong> faster resolution, fewer missed critical tasks.
-        </div>
-      </div>
-
-      <!-- 2) Automation: Sprint Reports -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://github.com/YassinAnalytics/Automated-Sprint-Reports-from-Jira-to-Stakeholders-via-Gmail"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/automated-sprint-report.png"
-            alt="Automated Sprint Reports automation preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">AUTOMATION</div>
-            <div class="pm-thumb-title">Automated Sprint Reports</div>
-            <div class="pm-thumb-meta">Jira → Gmail (KPIs + HTML report)</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Generates sprint KPIs (tickets, story points, blockers, completion rate) and emails stakeholders on schedule.
-          <br /><strong>Outcome:</strong> less manual reporting, clearer delivery visibility.
-        </div>
-      </div>
-
-      <!-- 3) Automation: Forms to Jira -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://github.com/YassinAnalytics/Jira-Ticket-Creation-from-Google-Forms-with-Sheet-Updates-and-Email-Notifications"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/jira-ticket-creation.png"
-            alt="Create Jira Tickets from Google Forms automation preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">AUTOMATION</div>
-            <div class="pm-thumb-title">Create Jira Tickets from Google Forms</div>
-            <div class="pm-thumb-meta">Google Forms / Sheets → Jira</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Captures form submissions, maps fields to Jira schema, and returns issue key + URL for tracking.
-          <br /><strong>Use case:</strong> intake workflows for requests, bugs, and internal ops.
-        </div>
-      </div>
-
-      <!-- 4) Automation: Streamlit to Jira -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://github.com/YassinAnalytics/Create-Jira-Tickets-from-Streamlit-Forms"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/jira-ticket-creation-streamlit.png"
-            alt="Create Jira Tickets from Streamlit Forms automation preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">AUTOMATION</div>
-            <div class="pm-thumb-title">Create Jira Tickets from Streamlit Forms</div>
-            <div class="pm-thumb-meta">Streamlit / Python → Jira</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Validates and transforms form data into Jira issues, prevents duplicates, and returns instant responses.
-          <br /><strong>Outcome:</strong> faster intake and reduced coordination overhead.
-        </div>
-      </div>
-
-      <!-- 5) Automation: UAT Feedback Triage -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://creators.n8n.io/workflows/12135"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/uat-feedback-triage-workflow.png"
-            alt="UAT Feedback Triage n8n workflow preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">AUTOMATION</div>
-            <div class="pm-thumb-title">UAT Feedback Triage with AI</div>
-            <div class="pm-thumb-meta">n8n · AI Agent → Jira / Notion / Sheets</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Automates UAT feedback triage using AI to classify, score severity, and route to the right team (Jira, Notion, Sheets).
-          <br /><strong>Outcome:</strong> closed-loop feedback with automatic tester notification.
-        </div>
-      </div>
-
-    </div>
-  </main>
-</section>
-
-
-<!-- ========================= -->
-<!-- DATA & ANALYTICS -->
-<!-- ========================= -->
-<section id="data-analytics" style="margin-top: 30px;">
-  <h2>Data & Analytics Projects</h2>
-
-  <main id="portfolio-data">
-    <div class="row no-gutters">
-
-      <!-- 1) Case Study: Retail dashboard -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://github.com/YassinAnalytics/saas-analytics-retail"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/retail-dashboard.png"
-            alt="Retail Analytics Dashboard project preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">CASE STUDY</div>
-            <div class="pm-thumb-title">Retail Analytics Dashboard</div>
-            <div class="pm-thumb-meta">Power BI / Figma</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Analytics product concept designed for non-technical teams with clear KPIs and AI-style alerts.
-          <br /><strong>Impact:</strong> +62% faster decisions, −22% out-of-stock situations.
-        </div>
-      </div>
-
-      <!-- 2) Data project: TikTok -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://github.com/YassinAnalytics/tiktok-engagement-analysis"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/tiktok.png"
-            alt="TikTok Engagement Analysis project preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">DATA PROJECT</div>
-            <div class="pm-thumb-title">TikTok Engagement Analysis</div>
-            <div class="pm-thumb-meta">19K videos · Python / SQL / Power BI</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Identified engagement drivers and translated insights into actionable recommendations.
-          <br /><strong>Highlight:</strong> likes represent 82% of total engagement in the dataset.
-        </div>
-      </div>
-
-      <!-- 3) Data project: MPG Recommender -->
-      <div class="col-lg-4 col-md-6 portfolio-container">
-        <a
-          class="portfolio-card"
-          href="https://github.com/YassinAnalytics/recommender-fantasy-football-picker"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="static/img/mpg.png"
-            alt="MPG Player Recommender project preview"
-            class="portfolio-card-img"
-          />
-
-          <div class="portfolio-card-body">
-            <div class="pm-thumb-kicker">DATA PROJECT</div>
-            <div class="pm-thumb-title">MPG Player Recommender</div>
-            <div class="pm-thumb-meta">Python / Power BI · Fantasy football optimizer</div>
-          </div>
-        </a>
-
-        <div class="portfolio-box-description">
-          Built a scoring model to surface undervalued players using recent form, cost-value ratio and position scarcity.
-          <br /><strong>Output:</strong> interactive Power BI dashboards and templates.
-        </div>
-      </div>
-
-    </div>
-  </main>
-</section>
 
 
 

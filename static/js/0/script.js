@@ -10,11 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
     "<span class='letter'>$&</span>"
   );
 
+  // Pas de couleur codée en dur ici : le thème est sombre, l'ancien #1b0180
+  // rendait le nom illisible. La couleur vient du CSS, l'animation ne fait que l'apparition.
   anime.timeline().add({
     targets: "#banner-content .letter",
     scale: [0.1, 1],
     opacity: [0, 1],
-    color: ["#1b0180", "#1b0180"],
     translateZ: 0,
     easing: "easeOutExpo",
     duration: 1000,
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Typing Effect
   var i = 0;
-  var txt = " Product Manager<"; /* The text */
+  var txt = " Senior Product Manager<"; /* The text */
   var speed = 50; /* The speed/duration of the effect in milliseconds */
 
   function typeWriter() {
