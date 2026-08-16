@@ -1,19 +1,108 @@
 /* =========================================================
-   CUSTOM OVERRIDES
-   Safe place for additions — never edit styles.css directly.
-   Uses the tokens defined in styles.css (:root).
+   CUSTOM OVERRIDES — direction artistique éditoriale
+   Palette papier / encre / bordeaux, alignée sur la DA des
+   prototypes (Bellwether, AnswerVault) : fond clair, titres
+   serif, filets fins, un seul accent.
+   styles.css n'est jamais modifié : tout passe par les tokens
+   redéfinis ici + quelques surcharges ciblées.
    ========================================================= */
 
+:root {
+  --bg: #faf8f3;
+  --text: #1c1a16;
+  --muted: #6b645a;
+  --primary: #8f1d2c;
+  --accent: #8f1d2c;
+
+  --card-bg: #ffffff;
+  --card-border: #e4ddd0;
+
+  --shadow: 0 1px 2px rgba(28, 26, 22, 0.06);
+  --radius: 2px;
+
+  --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+}
+
+/* Fond : papier uni, plus de dégradés radiaux */
+html, body {
+  background: var(--bg);
+}
+
 /* =========================
-   HERO — lisibilité du nom
-   Une ancienne version du script d'animation peignait chaque lettre en
-   #1b0180 (contraste 1.21:1 sur le fond sombre : illisible). Le script est
-   corrigé, mais on verrouille ici la couleur pour les visiteurs qui ont
-   encore l'ancien fichier en cache.
+   TYPOGRAPHIE ÉDITORIALE
 ========================= */
-#banner-content h1,
+#banner h1,
+section h2,
+.cs-title,
+.pm-thumb-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+#banner h1,
 #banner-content h1 .letter {
   color: var(--text) !important;
+}
+
+#banner h2 {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--primary);
+}
+
+#banner p {
+  color: var(--text);
+}
+
+#banner p strong {
+  color: var(--primary);
+}
+
+section h2 {
+  font-size: 26px;
+  color: var(--text);
+  border-top: 2px solid var(--text);
+  border-bottom: none;
+  padding-top: 10px;
+}
+
+/* Bouton : plein bordeaux, coins droits */
+.button {
+  color: #fff;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 2px;
+}
+.button:hover {
+  background: #6f1622;
+  color: #fff;
+}
+
+/* =========================
+   CARTES
+========================= */
+.portfolio-card-img {
+  background: #efe9de;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.pm-thumb-meta {
+  color: var(--muted);
+}
+
+.portfolio-box-description {
+  color: var(--muted);
+}
+.portfolio-box-description strong {
+  color: var(--text);
+}
+
+.pm-thumb-kicker {
+  color: var(--primary);
 }
 
 /* =========================
@@ -58,8 +147,7 @@
 
 .cs-title {
   margin: 7px 0 3px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 21px;
   line-height: 1.28;
   color: var(--text);
 }
@@ -67,7 +155,7 @@
 .cs-meta {
   margin-bottom: 14px;
   font-size: 13px;
-  color: rgba(165, 180, 199, 0.9);
+  color: var(--muted);
 }
 
 .case-study p {
@@ -87,20 +175,20 @@
   font-weight: 600;
 }
 
-/* the transferable takeaway — the point of each case */
+/* la leçon transposable — la raison d'être de chaque cas */
 .cs-principle {
   margin-top: 16px;
   padding: 12px 16px;
-  border-left: 3px solid var(--accent);
-  border-radius: 0 10px 10px 0;
-  background: rgba(34, 197, 94, 0.07);
+  border-left: 3px solid var(--primary);
+  border-radius: 0;
+  background: rgba(143, 29, 44, 0.05);
   font-size: 14.5px;
   line-height: 1.55;
   color: var(--text);
 }
 
 .cs-principle b {
-  color: var(--accent);
+  color: var(--primary);
   font-weight: 700;
 }
 
